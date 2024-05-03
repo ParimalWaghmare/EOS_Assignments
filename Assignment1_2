@@ -1,0 +1,313 @@
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:/$ cd Desktop
+bash: cd: Desktop: No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:/$ ls
+bin   cdrom  etc   lib    lib64   lost+found  mnt  proc  run   snap  swapfile  tmp  var
+boot  dev    home  lib32  libx32  media       opt  root  sbin  srv   sys       usr
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:/$ cd home
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:/home$ cd Desktop
+bash: cd: Desktop: No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:/home$ ls
+parimal
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:/home$ cd parimal
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~$ cd Desktop
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop$ ls
+ C_Assignments   file.c     Git      'IOT Assignments'   LAB_EXAMS      MCPI_Assignments   Python
+ CDAC_Project    file.out   GitData   IOT_LAB_EXAM       Lab_Exam.zip   Practice
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop$ cd Practice
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice$ ls
+ 50_Startups.csv     basicpointer.out   DAY1_5.ipynb        Pandas_Assignment       setnonbit.out
+ a.out               bitdiv.c           DAY1_6.ipynb        pointer2.c              setntonbit.c
+ arrayexample1.c     bitdiv.out         DAY1_7.ipynb        pointer2.out            setntonbit.out
+ array_Example2.c    bitwise.c          day1_src_codes      pointer3.c              stringPaste.c
+ array_example.c     bitwise.out        example.out         pointer.c               test.txt
+ array_example.o     clearnthbit.c      File1.txt           pointer.out             togglenthbit.c
+ array_example.out   clearnthbit.out    fileRead.c          practice_Numpy_Pandas   togglenthbit.out
+ arrayexample.out    Day04              fileRead.out        predefinedMacro.c       union.c
+ array_Example.out  'Day04 (copy)'      filewrite.c         predefinedMacro.out     union.out
+ basicpointer.c      DAY11_AI_MyCopy    filewrite.out       setbit.c
+ basicpointer.o      DAY1_4.ipynb       Numpy_Assignments   setbit.out
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice$ ls -i
+2651107  50_Startups.csv    3041097  Day04              2674637  pointer3.c
+2674611  a.out              2794643 'Day04 (copy)'      2647761  pointer.c
+2648720  arrayexample1.c    3169342  DAY11_AI_MyCopy    2641126  pointer.out
+2648733  array_Example2.c   2636990  DAY1_4.ipynb       2794814  practice_Numpy_Pandas
+2648917  array_example.c    2653628  DAY1_5.ipynb       2676972  predefinedMacro.c
+2648741  array_example.o    2651526  DAY1_6.ipynb       2621545  predefinedMacro.out
+2648249  array_example.out  2649841  DAY1_7.ipynb       2679450  setbit.c
+2647752  arrayexample.out   3169205  day1_src_codes     2674782  setbit.out
+2648793  array_Example.out  2648830  example.out        2679118  setnonbit.out
+2673542  basicpointer.c     2676077  File1.txt          2679536  setntonbit.c
+2673541  basicpointer.o     2676963  fileRead.c         2679357  setntonbit.out
+2645428  basicpointer.out   2676959  fileRead.out       2677294  stringPaste.c
+2679368  bitdiv.c           2676919  filewrite.c        2627113  test.txt
+2675120  bitdiv.out         2674726  filewrite.out      2679371  togglenthbit.c
+2665565  bitwise.c          3057383  Numpy_Assignments  2677551  togglenthbit.out
+2665564  bitwise.out        3169401  Pandas_Assignment  2673377  union.c
+2679539  clearnthbit.c      2673322  pointer2.c         2673139  union.out
+2676835  clearnthbit.out    2665490  pointer2.out
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice$ ls subdir
+ls: cannot access 'subdir': No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice$ ls subdir Practice
+ls: cannot access 'subdir': No such file or directory
+ls: cannot access 'Practice': No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice$ ls subdir Python
+ls: cannot access 'subdir': No such file or directory
+ls: cannot access 'Python': No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice$ cat > Wakodikar.txt
+Hardik Pandyaparimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice$ cat >> Wakodikar.txt
+Balewadiparimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice$ cat Wakodikar.txt
+Hardik PandyaBalewadiparimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice$ cat >>Wakodikar.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice$ touch -t 199809171159.00 Wakodikar.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice$ ls Wakodikar.txt
+Wakodikar.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice$ ls -lt
+total 468
+-rw-rw-r-- 1 parimal parimal    56 May  3 16:01  test.txt
+-rw-rw-r-- 1 parimal parimal   165 May  3 15:58  arrayexample1.c
+drwxrwxr-x 3 parimal parimal  4096 May  1 17:26  Pandas_Assignment
+drwxrwxr-x 4 parimal parimal  4096 Apr 30 18:51  practice_Numpy_Pandas
+drwxrwxr-x 4 parimal parimal  4096 Apr 29 17:28  DAY11_AI_MyCopy
+drwxrwxr-x 3 parimal parimal  4096 Apr 27 16:23  Numpy_Assignments
+-rw-rw-r-- 1 parimal parimal  5113 Apr 26 17:21  DAY1_7.ipynb
+drwxrwxr-x 3 parimal parimal  4096 Apr 26 17:19  day1_src_codes
+-rw-rw-r-- 1 parimal parimal  3187 Apr 26 17:17  DAY1_6.ipynb
+-rw-rw-r-- 1 parimal parimal  7252 Apr 26 16:58  DAY1_5.ipynb
+-rw-rw-r-- 1 parimal parimal  4113 Apr 26 15:39  DAY1_4.ipynb
+-rw-rw-r-- 1 parimal parimal  2374 Apr 26 14:10  50_Startups.csv
+drwxrwxr-x 5 parimal parimal  4096 Apr 19 14:53  Day04
+drwxrwxr-x 5 parimal parimal  4096 Apr 19 14:53 'Day04 (copy)'
+-rwxrwxr-x 1 parimal parimal 16064 Mar 22 18:34  setntonbit.out
+-rw-rw-r-- 1 parimal parimal   472 Mar 22 18:34  setntonbit.c
+-rwxrwxr-x 1 parimal parimal 16064 Mar 22 18:19  setnonbit.out
+-rwxrwxr-x 1 parimal parimal 16072 Mar 22 18:03  togglenthbit.out
+-rw-rw-r-- 1 parimal parimal   204 Mar 22 18:03  togglenthbit.c
+-rwxrwxr-x 1 parimal parimal 16112 Mar 22 17:56  clearnthbit.out
+-rw-rw-r-- 1 parimal parimal   211 Mar 22 17:56  clearnthbit.c
+-rwxrwxr-x 1 parimal parimal 16104 Mar 22 17:33  setbit.out
+-rw-rw-r-- 1 parimal parimal   221 Mar 22 17:33  setbit.c
+-rwxrwxr-x 1 parimal parimal 16104 Mar 22 16:45  bitdiv.out
+-rw-rw-r-- 1 parimal parimal   195 Mar 22 16:45  bitdiv.c
+-rwxrwxr-x 1 parimal parimal 15968 Mar 22 15:00  bitwise.out
+-rw-rw-r-- 1 parimal parimal   344 Mar 22 15:00  bitwise.c
+-rw-rw-r-- 1 parimal parimal    53 Mar 21 17:32  stringPaste.c
+-rwxrwxr-x 1 parimal parimal 15976 Mar 21 17:04  predefinedMacro.out
+-rw-rw-r-- 1 parimal parimal   158 Mar 21 17:04  predefinedMacro.c
+-rwxrwxr-x 1 parimal parimal 16136 Mar 20 17:30  fileRead.out
+-rw-rw-r-- 1 parimal parimal   213 Mar 20 17:28  fileRead.c
+-rw-rw-r-- 1 parimal parimal    10 Mar 20 17:03  File1.txt
+-rwxrwxr-x 1 parimal parimal 16192 Mar 20 17:03  filewrite.out
+-rw-rw-r-- 1 parimal parimal   210 Mar 20 17:02  filewrite.c
+-rwxrwxr-x 1 parimal parimal 16016 Mar 19 18:10  union.out
+-rw-rw-r-- 1 parimal parimal   235 Mar 19 18:10  union.c
+-rw-rw-r-- 1 parimal parimal   472 Mar 18 17:42  pointer3.c
+-rwxrwxr-x 1 parimal parimal 15968 Mar 18 17:39  a.out
+-rwxrwxr-x 1 parimal parimal 16064 Mar 18 15:46  pointer2.out
+-rw-rw-r-- 1 parimal parimal   371 Mar 18 15:46  pointer2.c
+-rwxrwxr-x 1 parimal parimal 16024 Mar 18 14:56  basicpointer.out
+-rw-rw-r-- 1 parimal parimal   335 Mar 18 14:55  basicpointer.c
+-rwxrwxr-x 1 parimal parimal 15976 Mar 18 14:49  basicpointer.o
+-rwxrwxr-x 1 parimal parimal 16224 Mar 13 16:59  array_example.out
+-rw-rw-r-- 1 parimal parimal  1149 Mar 13 16:59  array_example.c
+-rwxrwxr-x 1 parimal parimal 16184 Mar 13 16:18  example.out
+-rwxrwxr-x 1 parimal parimal 16112 Mar 13 15:16  array_example.o
+-rw-rw-r-- 1 parimal parimal    26 Mar 13 15:04  array_Example.out
+-rw-rw-r-- 1 parimal parimal   237 Mar 13 15:01  array_Example2.c
+-rwxrwxr-x 1 parimal parimal 15968 Mar 13 14:38  arrayexample.out
+-rwxrwxr-x 1 parimal parimal 15968 Mar 13 14:30  pointer.out
+-rw-rw-r-- 1 parimal parimal   354 Mar 13 14:30  pointer.c
+-rw-rw-r-- 1 parimal parimal    21 Sep 17  1998  Wakodikar.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice$ mkdir one
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice$ ls
+ 50_Startups.csv     basicpointer.out   DAY1_5.ipynb        one                     setbit.out
+ a.out               bitdiv.c           DAY1_6.ipynb        Pandas_Assignment       setnonbit.out
+ arrayexample1.c     bitdiv.out         DAY1_7.ipynb        pointer2.c              setntonbit.c
+ array_Example2.c    bitwise.c          day1_src_codes      pointer2.out            setntonbit.out
+ array_example.c     bitwise.out        example.out         pointer3.c              stringPaste.c
+ array_example.o     clearnthbit.c      File1.txt           pointer.c               test.txt
+ array_example.out   clearnthbit.out    fileRead.c          pointer.out             togglenthbit.c
+ arrayexample.out    Day04              fileRead.out        practice_Numpy_Pandas   togglenthbit.out
+ array_Example.out  'Day04 (copy)'      filewrite.c         predefinedMacro.c       union.c
+ basicpointer.c      DAY11_AI_MyCopy    filewrite.out       predefinedMacro.out     union.out
+ basicpointer.o      DAY1_4.ipynb       Numpy_Assignments   setbit.c                Wakodikar.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice$ cd one
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ touch 1.txt 11.txt 111.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ ls
+111.txt  11.txt  1.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ mkdir two
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ cd two
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two$ touch 2.txt 22.txt 222.txt ^[[3~^C
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two$ touch 2.txt 22.txt 222.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two$ ls
+222.txt  22.txt  2.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two$ mkdir three
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two$ touch 3.txt 33.txt 333.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two$ ls three
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two$ ls two
+ls: cannot access 'two': No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two$ ls
+222.txt  22.txt  2.txt  333.txt  33.txt  3.txt  three
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two$ rm 3.txt 33.txt 333.txt 
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two$ rm -r three
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two$ cd three
+bash: cd: three: No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two$ ls one
+ls: cannot access 'one': No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two$ cd .
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two$ ls
+222.txt  22.txt  2.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two$ cd .
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two$ cd ..
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ ls
+111.txt  11.txt  1.txt  two
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ cd two
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two$ cd three
+bash: cd: three: No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two$ mkdir three
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two$ 3.txt 33.txt 333.txt
+3.txt: command not found
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two$ touch 3.txt 33.txt 333.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two$ mkdir four
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two$ cd four
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/four$ touch 4.txt 44.txt 444.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/four$ mkdir five
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/four$ cd five
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/four/five$ touch 5.txt 55.txt 555.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/four/five$ cd home
+bash: cd: home: No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/four/five$ cd home/
+bash: cd: home/: No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/four/five$ cd ~
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~$ ls five
+ls: cannot access 'five': No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~$ cd Desktop
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop$ cd Practice
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice$ cd ..
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop$ cd..
+cd..: command not found
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop$ cd ..
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~$ cd ~five
+bash: cd: ~five: No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~$ cd ~/five
+bash: cd: /home/parimal/five: No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~$ ls ~/five
+ls: cannot access '/home/parimal/five': No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~$ ls ~/five
+ls: cannot access '/home/parimal/five': No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~$ cd ..
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:/home$ ls ~/five
+ls: cannot access '/home/parimal/five': No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:/home$ echo "file name 44.txt"> ~/four/44.txt 
+bash: /home/parimal/four/44.txt: No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:/home$ echo "hello"> ~/four/44.txt 
+bash: /home/parimal/four/44.txt: No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:/home$ cd Desktop
+bash: cd: Desktop: No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:/home$ ls
+parimal
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:/home$ cd parimal
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~$ ls
+a.out        copy.txt      Desktop    HACKATHON      OSDAY02   STM32Cube      Templates
+Arduino      DAY1_1.ipynb  Documents  HACKATHON.zip  Pictures  STM32CubeIDE   test.c
+assign1.c    DAY1_2.ipynb  Downloads  Music          Public    STM32_CUBEIDE  test.out
+assign1.out  DAY1_3.ipynb  file2.txt  ones           snap      tac.txt        Videos
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~$ cd Desktop
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop$ ls 
+ C_Assignments   file.c     Git      'IOT Assignments'   LAB_EXAMS      MCPI_Assignments   Python
+ CDAC_Project    file.out   GitData   IOT_LAB_EXAM       Lab_Exam.zip   Practice
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop$ cd Practice
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice$ ls
+ 50_Startups.csv     basicpointer.out   DAY1_5.ipynb        one                     setbit.out
+ a.out               bitdiv.c           DAY1_6.ipynb        Pandas_Assignment       setnonbit.out
+ arrayexample1.c     bitdiv.out         DAY1_7.ipynb        pointer2.c              setntonbit.c
+ array_Example2.c    bitwise.c          day1_src_codes      pointer2.out            setntonbit.out
+ array_example.c     bitwise.out        example.out         pointer3.c              stringPaste.c
+ array_example.o     clearnthbit.c      File1.txt           pointer.c               test.txt
+ array_example.out   clearnthbit.out    fileRead.c          pointer.out             togglenthbit.c
+ arrayexample.out    Day04              fileRead.out        practice_Numpy_Pandas   togglenthbit.out
+ array_Example.out  'Day04 (copy)'      filewrite.c         predefinedMacro.c       union.c
+ basicpointer.c      DAY11_AI_MyCopy    filewrite.out       predefinedMacro.out     union.out
+ basicpointer.o      DAY1_4.ipynb       Numpy_Assignments   setbit.c                Wakodikar.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice$ cd one/two/three/four/five
+bash: cd: one/two/three/four/five: No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice$ cd one
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ ls
+111.txt  11.txt  1.txt  two
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ cd two
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two$ cd three
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/three$ cd four
+bash: cd: four: No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/three$ ls
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/three$ ls
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/three$ ls one
+ls: cannot access 'one': No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/three$ cd ..
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two$ ls
+222.txt  22.txt  2.txt  333.txt  33.txt  3.txt  four  three
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two$ cd four
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/four$ ls
+444.txt  44.txt  4.txt  five
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/four$ touch 44.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/four$ cd five
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/four/five$ ls
+555.txt  55.txt  5.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/four/five$ rm 555.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/four/five$ cd ..
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/four$ ls
+444.txt  44.txt  4.txt  five
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/four$ cd ..
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two$ ls
+222.txt  22.txt  2.txt  333.txt  33.txt  3.txt  four  three
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two$ cd three
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/three$ cat >> 3.txt
+DESDparimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/three$ cat 3.txt
+DESDparimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/three$ ls five/two
+ls: cannot access 'five/two': No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/three$ ls
+3.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/three$ cd ..
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two$ ls
+222.txt  22.txt  2.txt  333.txt  33.txt  3.txt  four  three
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two$ cd four
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/four$ ls four/two
+ls: cannot access 'four/two': No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/four$ ls
+444.txt  44.txt  4.txt  five
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/four$ cd five
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/four/five$ cd ~/home
+bash: cd: /home/parimal/home: No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/four/five$ ~home
+~home: command not found
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/four/five$ cd ~
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~$ ls
+a.out        copy.txt      Desktop    HACKATHON      OSDAY02   STM32Cube      Templates
+Arduino      DAY1_1.ipynb  Documents  HACKATHON.zip  Pictures  STM32CubeIDE   test.c
+assign1.c    DAY1_2.ipynb  Downloads  Music          Public    STM32_CUBEIDE  test.out
+assign1.out  DAY1_3.ipynb  file2.txt  ones           snap      tac.txt        Videos
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~$ cd Desktop
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop$ cd Practice
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice$ ls /home/parimal/Desktop/Practice/one/two/four/five/
+55.txt  5.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice$ cat > /home/parimal/Desktop/Practice/one/two/four/44.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice$ cat /home/parimalsktop/Practice/one/two/four/44.txt
+cat: /home/parimalsktop/Practice/one/two/four/44.txt: No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice$ cat /home/parimalsktop/Practice/one/two/four 44.txt
+cat: /home/parimalsktop/Practice/one/two/four: No such file or directory
+cat: 44.txt: No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice$ cat /home/parimal/Desktop/Practice/one/two/four/44.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice$ Desktop/Practice$sktop/Practice/one/two/four/44.txt^C/two/four/five
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice$ rm /home/parimal/Desktop/Practice/one/two/four/five/555.txt
+rm: cannot remove '/home/parimal/Desktop/Practice/one/two/four/five/555.txt': No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice$ rm /home/parimal/Desktop/Practice/one/two/four/five/55.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice$ ls /home/parimal/Desktop/Practice/one/two/four/five
+5.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice$ cd /home/parimal/Desktop/Practice/one/two/four/five
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/four/five$ ls /home/parimal/Desktop/Practice/one/two
+222.txt  22.txt  2.txt  333.txt  33.txt  3.txt  four  three
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/four/five$ rm /home/parimal/Desktop/Practice/one/two/222.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one/two/four/five$ cd /home/parimal/Desktop/Practice/one
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ rm /home/parimal/Desktop/Practice/one/two/four/five/*
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ rm /home/parimal/Desktop/Practice/one/two/four/five
+rm: cannot remove '/home/parimal/Desktop/Practice/one/two/four/five': Is a directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ rm -r /home/parimal/Desktop/Practice/one/two/four/five
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ rm -r /home/parimal/Desktop/Practice/one/two/four
+
