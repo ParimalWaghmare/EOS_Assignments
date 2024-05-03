@@ -1,0 +1,78 @@
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ rm -r /home/parimal/Desktop/Practice/one/two/four/five
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ rm -r /home/parimal/Desktop/Practice/one/two/four
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ cat > data.txt
+Linux is open source
+
+in linux everything is File
+
+Files have permissions.
+
+Files have inode no.
+
+Files have size.
+
+there are several types of file.parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ wc data.txt
+ 10  25 148 data.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep data.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep "files" data.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep files *
+grep: two: Is a directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep "files" *
+grep: two: Is a directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep "LINUX" *
+grep: two: Is a directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep "file" *
+data.txt:there are several types of file.
+grep: two: Is a directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep "files" data.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep -v "files" data.txt
+Linux is open source
+
+in linux everything is File
+
+Files have permissions.
+
+Files have inode no.
+
+Files have size.
+
+there are several types of file.
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ tail -n 3 data.txt
+Files have size.
+
+there are several types of file.parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ tail^C
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ head -n 2 data.txt
+Linux is open source
+
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ head -n 5 data.txt | tail -n 3
+in linux everything is File
+
+Files have permissions.
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desparimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desparimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ g                             ^C
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep "\.$" data.txt
+Files have permissions.
+Files have inode no.
+Files have size.
+there are several types of file.
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep "f" data.txt
+there are several types of file.
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep"^f" data.txt
+grep^f: command not found
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep "have" data.txt
+Files have permissions.
+Files have inode no.
+Files have size.
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep "files" data.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep "file" data.txt
+there are several types of file.
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep -v "files" data.txt
+Linux is open source
+
+in linux everything is File
+
+Files have permissions.
+
+Files have inode no.
+
+Files have size.
+
