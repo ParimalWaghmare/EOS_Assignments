@@ -1,0 +1,136 @@
+ls
+Assign1  Assign1_1  Assignment1_1  Assignment1_4  assignment3_2.txt  EOS_Assignments  file2.txt  ShellScriptAssignment3.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments$ mkdir txttohtml
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments$ cd txttohtml
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ cat > heelo.txt
+dsdsdjnbhsjhdparimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ reanme *.txt files to .html
+Command 'reanme' not found, did you mean:
+  command 'rename' from deb rename (1.30-1)
+Try: sudo apt install <deb name>
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ rename *.txt files to .html
+'Bareword "heelo" not allowed while "strict subs" in use at line 2, in:
+heelo.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ rename 's/\.txt$/.htm/' *.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ ls
+heelo.htm
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ rename 's/\.txt$/.html/' *.txt
+Can't rename *.txt *.html: No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ rename 's/\.htm$/.html/' *.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ ls
+heelo.htm
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ ln -s heelo.html
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ stat
+stat: missing operand
+Try 'stat --help' for more information.
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ stat heelo.html
+  File: heelo.html -> heelo.html
+  Size: 10        	Blocks: 0          IO Block: 4096   symbolic link
+Device: 805h/2053d	Inode: 3176247     Links: 1
+Access: (0777/lrwxrwxrwx)  Uid: ( 1000/ parimal)   Gid: ( 1000/ parimal)
+Access: 2024-05-06 18:13:48.205954000 +0530
+Modify: 2024-05-06 18:13:47.953944907 +0530
+Change: 2024-05-06 18:13:47.953944907 +0530
+ Birth: 2024-05-06 18:13:47.953944907 +0530
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ touch -m -t 202409181212.59 heelo.html
+touch: cannot touch 'heelo.html': Too many levels of symbolic links
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ touch -m -t 202412202258.59 heelo.html
+touch: cannot touch 'heelo.html': Too many levels of symbolic links
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ touch -m -t 202412202258.59 heelo.html
+touch: cannot touch 'heelo.html': Too many levels of symbolic links
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ touch > empty.txt
+touch: missing file operand
+Try 'touch --help' for more information.
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ touch  empty.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ cat >> empty.txt
+hello 
+how 
+are
+you where
+are you
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ tail empty.txt
+hello
+how 
+are
+you where
+are you
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ whoami
+parimal
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ tty
+/dev/pts/5
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ who am i
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ users
+parimal
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ who
+parimal  tty2         2024-05-06 14:07 (tty2)
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ grep "are" empty.txt
+are
+are you
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ egrep "are" empty.txt
+are
+are you
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ fgrep "are" empty.txt
+are
+are you
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ chmod +r empty.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ chmod +w empty.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ wc empty.txt
+ 5  7 33 empty.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ who | wc empty.txt
+ 5  7 33 empty.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ head | tail empty.txt
+hello
+how 
+are
+you where
+are you
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ head ,tail empty.txt
+head: cannot open ',tail' for reading: No such file or directory
+==> empty.txt <==
+hello
+how 
+are
+you where
+are you
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ sort | uniq empty.txt
+hello
+how 
+are
+you where
+are you
+^C
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ who | grep "" empty.txt
+hello
+how 
+are
+you where
+are you
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ who | grep  empty.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ ls -LS
+ls: cannot access 'heelo.html': Too many levels of symbolic links
+empty.txt  heelo.htm  heelo.html
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ ls -l | grep "^-" | wc -l
+2
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ tr empty.txt upperempty.txt
+^C
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ tr <empty.txt> upperempty.txt
+tr: missing operand
+Try 'tr --help' for more information.
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ tr '[:lower:]' '[:upper:]' < empty.txt.txt > output.txt
+bash: empty.txt.txt: No such file or directory
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ tr '[:lower:]' '[:upper:]' < empty.txt > output.txt
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ cat empty.txt
+hello
+how 
+are
+you where
+are you
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ cut -d 'are' -f 1,2 empty.txt
+cut: the delimiter must be a single character
+Try 'cut --help' for more information.
+parimal@parimal-HP-Pavilion-Laptop-14-ce3xxx:~/Desktop/EOS_Assignments/txttohtml$ cut -d ',' -f 1,2 empty.txt
+hello
+how 
+are
+you where
+are you
+
